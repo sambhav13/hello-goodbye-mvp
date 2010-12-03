@@ -48,13 +48,13 @@ public class MainScreenActivity implements Activity {
 		display.getLnkHello().addClickHandler(new ClickHandler(){
 			@Override
 			public void onClick(ClickEvent event) {
-				goTo(new HelloPlace("hello_place"));
+				goTo(new HelloPlace(AppConstants.HELLO_PLACE_NAME));
 			}
 		});
 		display.getLnkGoodbye().addClickHandler(new ClickHandler(){
 			@Override
 			public void onClick(ClickEvent event) {
-				goTo(new GoodByePlace("goodByePlace"));
+				goTo(new GoodByePlace(AppConstants.GOODBYE_PLACE_NAME));
 			}
 		});
 	}
